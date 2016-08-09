@@ -30,33 +30,12 @@
 *,*:before, *:after{box-sizing:border-box;outline:none;}
 *,body,html{-webkit-text-size-adjust: none;-webkit-appearance: none;max-height: 9001em;}
 html{height:100%;}
-body{min-height:100%;width:100%;min-width:320px;font-family:arial,sans-serif;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;line-height: 1;
+body{min-height:100%;width:100%;min-width:960px;font-family:arial,sans-serif;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;line-height: 1;
 
-    /* styles for wp-admin panel */
-
-    &.customize-support{
-        .wp-panel-show{top:32px;} //fixed elements (if their has top:0) must has class .wp-panel-show
-    }
-
-    /* /styles for wp-admin panel */
 
 }
 img{vertical-align:bottom;border:0;max-width:100%;}
 
-/* adapted styles for wp-admin panel */
-
-@media screen and (max-width: 782px){
-
-    body{
-        &.customize-support{
-            .wp-panel-show{top:46px;}
-        }
-    }
-
-    #wpadminbar{position: fixed!important;}
-
-}
-/* /adapted styles for wp-admin panel */
 
 /* /base styles */
 
@@ -95,7 +74,11 @@ input, textarea{
     }
 }
 
-//  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
+@include font-face('Bandera', 'BanderaProLight', 300);
+@include font-face('Bandera', 'BanderaPro-Bold', 700);
+@include font-face('Bandera', 'BanderaProHeavy', 800);
+@include font-face('Bandera', 'BanderaProMedium', 500);
+@include font-face('Bandera', 'BanderaProThin', 300);
 
 
 /*/fonts*/
